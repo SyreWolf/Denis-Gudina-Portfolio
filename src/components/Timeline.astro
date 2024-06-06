@@ -1,0 +1,14 @@
+---
+import type { Timeline } from "@/types/types"
+import TimelineItem from "./TimelineItem.astro"
+
+type Props = Timeline
+
+const { timeline = [] } = Astro.props
+---
+
+<ol class="relative mt-16">
+  {timeline.map((item) => (
+    <li><TimelineItem {...item} /></li>
+  ))}
+</ol>

@@ -1,0 +1,17 @@
+---
+import type { Card } from "@/types/types";
+
+type Props = Card
+
+const { href, title, body } = Astro.props;
+---
+
+<li class="link-card flex p-[1px] [&:has(:focus-within,:hover)_h2]:text-[rgb(var(--accent-light))] bg-[#23262d] bg-[length:400%] bg-none [&:has(:focus-within)]:bg-[var(--accent-gradient)] rounded-[7px] bg-[position:100%] focus-hover:bg-[position:0] transition-[background-position_0.6s_cubic-bezier(0.22,1,0.36,1)] shadow-[inset_0_0_0_1px_rgba(255,255,255,0.1)]">
+	<a href={href} class="w-full no-underline leading-[1.4] p-[calc(1.5rem-1px)] rounded-[8px] text-white bg-[#23262d] opacity-80">
+		<h2 class="m-0 text-[1.25rem] transition-[color_0.6s_cubic-bezier(0.22,1,0.36,1)]">
+			{title}
+			<span>&rarr;</span>
+		</h2>
+		<p class="mt-[0.5rem] mb-0">{body}</p>
+	</a>
+</li>
