@@ -10,6 +10,8 @@ import { heroInfo, socials } from "@/utils/Data.astro"
       class="rounded-full shadow-lg size-16"
       src={heroInfo.imageSrc}
       alt={heroInfo.imageAlt}
+      decoding="async"
+      loading="lazy"
     />
     <a
       href={heroInfo.badgeLink}
