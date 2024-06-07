@@ -1,0 +1,238 @@
+---
+import AboutMe from "@/components/AboutMe.astro";
+import Projects from "@/components/Projects.astro";
+import Timeline from "@/components/Timeline.astro";
+import Briefcase from "@/components/icons/Briefcase.astro";
+import Code from "@/components/icons/Code.astro";
+import LinkedIn from "@/components/icons/LinkedIn.astro";
+import Mail from "@/components/icons/Mail.astro";
+import NextJS from "@/components/icons/NextJS.astro";
+import ProfileCheck from "@/components/icons/ProfileCheck.astro";
+import School from "@/components/icons/School.astro";
+import Tailwind from "@/components/icons/Tailwind.astro";
+import type { Hero, MetaProps, NavItem, Section, Social, TechProject, TechTag, TimelineItem } from "@/types/types";
+
+export const themes = ["Light", "Dark", "System"]
+export const profileImage = '/denis-gudina.jpg'
+export const profileName = 'Denis Gudiña'
+export const linkedInUrl = 'https://linkedin.com/in/denisgudina'
+export const emailUrl = 'mailto:denisgn99@gmail.com'
+
+export const heroInfo: Hero =  {
+  imageSrc: profileImage,
+  imageAlt: profileName,
+  badgeText: "Disponible para trabajar",
+  badgeLink: linkedInUrl,
+  header: `Hola, soy ${profileName}`,
+  experience: " - 4 años de experiencia.",
+  role: "UX/UI Engineer | Frontend Engineer",
+  location: "Madrid, España 🇪🇸. ",
+  description: "Especializado en el desarrollo de interfaces y sistemas de diseño para productos digitales."
+}
+
+export const socials: Social[] =  [
+  {
+    name: "LinkedIn",
+    link: linkedInUrl,
+    icon: LinkedIn,
+  },
+  {
+    name: "Contáctame",
+    link: emailUrl,
+    icon: Mail,
+  }
+]
+
+export const aboutMeSections: string[] = [
+  `<p>Me llamo Denis. Empecé en la programación como Diseñador y Desarrollador de Videojuegos,
+    pero pronto descubrí mi pasión por las aplicaciones web. Desde hace algo más de 4 años,
+    <strong>ideo y desarrollo interfaces fluidas, escalables y sostenibles.</strong></p>`,
+  `<p>Como profesional de la tecnología, me gustaría profundizar en el mundo de la interfaz 
+    y la experiencia de usuario, estoy interesado en trabajar entre el diseño y el desarrollo, 
+    con <strong>Design Systems e interfaces bien estructuradas</strong>.</p>`,
+  `<p>Apasionado del fitness, los videojuegos, la filosofía, la ciencia ficción, la fantasía, 
+    la actualidad y el senderismo.</p>`,
+]
+
+export const navItems: NavItem[] = [
+  {
+    title: "Inicio",
+    label: "start",
+    url: "/#start",
+  },
+  {
+    title: "Experiencia",
+    label: "experience",
+    url: "/#experience",
+  },
+  {
+    title: "Educación",
+    label: "education",
+    url: "/#education",
+  },
+  {
+    title: "Proyectos",
+    label: "projects",
+    url: "/#projects",
+  },
+  {
+    title: "Sobre mí",
+    label: "about-me",
+    url: "/#about-me",
+  },
+  {
+    title: "Contacto",
+    label: "contact",
+    url: emailUrl,
+  },
+]
+
+export const experienceTimeline: TimelineItem[] = [
+  {
+    date: "dic. 2022 - actualidad",
+    title: "UI/UX Engineer | Frontend Engineer",
+    place: "MOGU",
+    description:
+      "En MOGU mantuve y evolucioné la plataforma para llegar a más de 200 agencias de viajes de pago y más de 100k usuarios. Me centré en el diseño y desarrollo de la interfaz. Trabajé con Figma, React, Typescript, Redux, Amplitude y Playwright. En ocasiones puntuales desarrollé con PHP, Laravel y MySQL.",
+  },
+  {
+    date: "sept. 2021 - abr. 2022",
+    title: "Frontend Engineer | Brand Designer",
+    place: "Nebula Space Market",
+    description:
+      "Uno de mis primeros emprendimientos de software, como co-fundador y ingeniero de frontend/UX/UI, pude profundizar en el desarrollo de e-commerce con integraciones de dApps.",
+  },
+  {
+    date: "jul. 2020 - mar. 2022",
+    title: "UI/UX Engineer | Frontend Engineer",
+    place: "SupportFactory.net",
+    description:
+      "En SupportFactory me dediqué a la gestión, diseño, mantenimiento y desarrollo de las interfaces de varios proyectos, mejorando su calidad a través de soluciones sencillas y escalables. También tuve el rol de crear la imagen de marca de algunos proyectos. Trabajé con Photoshop, Illustrator, Javascript, HTML, CSS y PHP.",
+  },
+  {
+    date: "ene. 2020 - nov. 2020",
+    title: "Frontend Engineer | Brand Designer",
+    place: "BawyDesign",
+    description:
+      "Mi principal función fue ayudar en la creación del diseño de marca y el e-commerce de la marca. Fue una buena oportunidad para trabajar con conocidos y mejorar mis habilidades de desarrollo.",
+  },
+]
+
+export const educationTimeline: TimelineItem[] = [
+  {
+    date: "sep. 2016 - jul. 2020",
+    title: "Grado en Diseño y Desarrollo de Videojuegos, Game Designer",
+    place: "Universidad Rey Juan Carlos",
+    description:
+      "Como amante de los videojuegos, el diseño y la tecnología, esta fue la carrera que elegir. Con un currículo variado, pude aprender sobre disciplinas muy variadas, desde la programación, hasta el diseño, pasando por la gestión de equipos, las matemáticas y la física.",
+  }
+]
+
+export const pageSections: Section[] = [
+  {
+    title: "Experiencia",
+    id: "experience",
+    icon: Briefcase,
+    component: Timeline,
+    props: {timeline: experienceTimeline}
+  },
+  {
+    title: "Educación",
+    id: "education",
+    icon: School,
+    component: Timeline,
+    props: {timeline: educationTimeline}
+  }, 
+  {
+    title: "Proyectos",
+    id: "projects",
+    icon: Code,
+    component: Projects
+  },
+  {
+    title: "Sobre mí",
+    id: "about-me",
+    icon: ProfileCheck,
+    component: AboutMe
+  }
+]
+
+export const metaProps: MetaProps = {
+  title: `Portfolio de ${profileName} - UX/UI Developer | Frontend Engineer con 4 años de experiencia`,
+  description: `Contrata a ${profileName} para crear tu aplicación web. UX/UI Developer | Frontend Engineer.`,
+}
+
+export const techTags: { [key: string]: TechTag } = {
+  NEXT: {
+    name: "Next.js",
+    class: "bg-black text-white",
+    icon: NextJS,
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-[#003159] text-white",
+    icon: Tailwind,
+  },
+}
+
+export const techProjects: TechProject[] = [
+  {
+    title: "MOGU",
+    description: "Mi último proyecto profesional. Un SaaS ambicioso para gestión de agencias de viajes, mayoristas y viajeros. Desde la creación de la propuesta, hasta su contratación, venta y disfrute por los viajeros en destino.",
+    link: "https://app.moguplatform.com",
+    image: "/projects/mogu.png",
+    tags: [techTags.NEXT, techTags.TAILWIND],
+  },
+  {
+    title: "wthr_now.",
+    description: "Una prueba de concepto de diversas librerías de componentes y la API abierta de OpenWeatherMap, todo unido a través de una UI simple pero estilizada.",
+    link: "https://wthrnow.vercel.app",
+    github: "https://github.com/SyreWolf/wthr_now",
+    image: "/projects/wthr_now.png",
+    tags: [techTags.NEXT, techTags.TAILWIND],
+  },
+  {
+    title: "devLink",
+    description: "Prueba de concepto para probar distintos tipos de animaciones, librerías de Drag & Drop para hacer flujos de interacción complejos y filtrado de datos, con un guiño a Trello.",
+    link: "https://devlink.vercel.app",
+    github: "https://github.com/SyreWolf/devlink",
+    image: "/projects/devlink.png",
+    tags: [techTags.NEXT, techTags.TAILWIND],
+  },
+  {
+    title: "Denis Gudiña - Mi portfolio",
+    description: "Creación de un portfolio a través de Astro. Componentes reutilizables y fácilmente modificables de manera centralizada.",
+    link: "/",
+    github: "https://github.com/SyreWolf/Denis-Gudina-Portfolio",
+    image: "/projects/denis-gudina-portfolio.png",
+    tags: [techTags.NEXT, techTags.TAILWIND],
+  },
+  {
+    title: "SupportFactory.net",
+    description: "Este desarrollo fue para la página web principal de SupportFactory. Se añadieron nuevas secciones como la galería o el blog, además de modificar y modernizar las ya existentes.",
+    link: "https://supportfactory.net",
+    image: "/projects/supportfactory.png",
+    tags: [techTags.NEXT, techTags.TAILWIND],
+  },
+  {
+    title: "Vertice",
+    description: "Multiplataforma integral para la gestión, contratación, consulta y consumo de cursos profesionales, orientados a las oposiciones. Desarrollado para Vertice Elearning, se unificaron sus 8 plataformas en una sola gran plataforma con multiroles y módulos de operaciones.",
+    link: "https://vertice.org",
+    image: "/projects/vertice.png",
+    tags: [techTags.NEXT, techTags.TAILWIND],
+  },
+  {
+    title: "Join The Artist",
+    description: "Hub de artistas para patrocinio y ventas de diversos eventos y actividades culturales. Actualmente desactivada. En la web de SupportFactory se pueden consultar capturas de la interfaz, dentro de la galería.",
+    link: "https://www.supportfactory.net/projects/jointheartist.html",
+    image: "/projects/jointheartist.png",
+    tags: [techTags.NEXT, techTags.TAILWIND],
+  },
+  {
+    title: "Yes&Mar",
+    description: "Plataforma para agencia de viajes en el caribe. Creada desde cero, ofrecía el flujo completo de presentación de propuesta de viaje y venta. Actualmente desactivada. En la web de SupportFactory aún se pueden consultar capturas de la interfaz, dentro de la galería.",
+    image: "/projects/yes&mar.png",
+    tags: [techTags.NEXT, techTags.TAILWIND],
+  }
+]
+---
