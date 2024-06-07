@@ -4,10 +4,10 @@ import ThemeToggle from "./ThemeToggle.astro"
 ---
 
 <header class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2">
-  <nav class="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-200 justify-center items-center">
+  <nav class="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-50 justify-center items-center">
     {navItems.map((link) => (
         <a
-          class="relative block px-2 py-2 transition hover:text-yellow-500 dark:hover:text-yellow-400"
+          class="relative block px-2 py-2 transition hover:text-teal-400 dark:hover:text-teal-400"
           aria-label={link.label}
           href={link.url}
         >
@@ -28,9 +28,9 @@ import ThemeToggle from "./ThemeToggle.astro"
         if (entry.isIntersecting) {
           navItems.forEach((item) => {
             if (item.getAttribute("aria-label") == entry.target.id) {
-              item.classList.add("text-yellow-500")
+              item.classList.add("dark:text-teal-300", "text-teal-400")
             } else {
-              item.classList.remove("text-yellow-500")
+              item.classList.remove("dark:text-teal-300", "text-teal-400")
             }
           })
         }
