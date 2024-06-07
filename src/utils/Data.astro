@@ -2,14 +2,32 @@
 import AboutMe from "@/components/AboutMe.astro";
 import Projects from "@/components/Projects.astro";
 import Timeline from "@/components/Timeline.astro";
+import AstroIcon from "@/components/icons/AstroIcon.astro";
+import Aws from "@/components/icons/Aws.astro";
 import Briefcase from "@/components/icons/Briefcase.astro";
 import Code from "@/components/icons/Code.astro";
+import Css from "@/components/icons/Css.astro";
+import Docker from "@/components/icons/Docker.astro";
+import Figma from "@/components/icons/Figma.astro";
+import Gcp from "@/components/icons/Gcp.astro";
+import Javascript from "@/components/icons/Javascript.astro";
+import Laravel from "@/components/icons/Laravel.astro";
 import LinkedIn from "@/components/icons/LinkedIn.astro";
 import Mail from "@/components/icons/Mail.astro";
+import Mysql from "@/components/icons/Mysql.astro";
+import Netlify from "@/components/icons/Netlify.astro";
 import NextJS from "@/components/icons/NextJS.astro";
+import Php from "@/components/icons/Php.astro";
+import Playwright from "@/components/icons/Playwright.astro";
 import ProfileCheck from "@/components/icons/ProfileCheck.astro";
+import React from "@/components/icons/React.astro";
+import Redux from "@/components/icons/Redux.astro";
 import School from "@/components/icons/School.astro";
+import Scss from "@/components/icons/Scss.astro";
+import StyledComponents from "@/components/icons/StyledComponents.astro";
 import Tailwind from "@/components/icons/Tailwind.astro";
+import Typescript from "@/components/icons/Typescript.astro";
+import Vercel from "@/components/icons/Vercel.astro";
 import type { Hero, MetaProps, NavItem, Section, Social, TechProject, TechTag, TimelineItem } from "@/types/types";
 
 export const themes = ["Light", "Dark", "System"]
@@ -163,15 +181,105 @@ export const metaProps: MetaProps = {
 }
 
 export const techTags: { [key: string]: TechTag } = {
-  NEXT: {
+  next: {
     name: "Next.js",
-    class: "bg-black text-white",
+    class: "bg-[#000000]/60 dark:bg-[#ffffff]/20 text-white",
     icon: NextJS,
   },
-  TAILWIND: {
+  tailwind: {
     name: "Tailwind CSS",
-    class: "bg-[#003159] text-white",
+    class: "bg-[#38bdf8]/60 dark:bg-[#38bdf8]/20 text-white",
     icon: Tailwind,
+  },
+  react: {
+    name: "React",
+    class: "bg-[#01a4c2]/60 dark:bg-[#01a4c2]/20 text-white",
+    icon: React,
+  },
+  astro: {
+    name: "Astro",
+    class: "bg-[#ed5908]/60 dark:bg-[#ed5908]/20 text-white",
+    icon: AstroIcon,
+  },
+  styledComponents: {
+    name: "Styled Components",
+    class: "bg-[#bc7b9c]/60 dark:bg-[#bc7b9c]/20 text-white",
+    icon: StyledComponents,
+  },
+  typescript: {
+    name: "Typescript",
+    class: "bg-[#3078c6]/60 dark:bg-[#3078c6]/20 text-white",
+    icon: Typescript,
+  },
+  javascript: {
+    name: "Javascript",
+    class: "bg-[#efdb50]/60 dark:bg-[#efdb50]/20 text-white",
+    icon: Javascript,
+  },
+  playwright: {
+    name: "Playwright",
+    class: "bg-[#2eaa33]/60 dark:bg-[#2eaa33]/20 text-white",
+    icon: Playwright,
+  },
+  php: {
+    name: "PHP",
+    class: "bg-[#000000]/60 dark:bg-[#f0f0f0]/20 text-white",
+    icon: Php,
+  },
+  docker: {
+    name: "Docker",
+    class: "bg-[#008fe2]/60 dark:bg-[#008fe2]/20 text-white",
+    icon: Docker,
+  },
+  css: {
+    name: "CSS",
+    class: "bg-[#60bde4]/60 dark:bg-[#60bde4]/20 text-white",
+    icon: Css,
+  },
+  scss: {
+    name: "SCSS",
+    class: "bg-[#bd5e93]/60 dark:bg-[#bd5e93]/20 text-white",
+    icon: Scss,
+  },
+  figma: {
+    name: "Figma",
+    class: "bg-[#a259ff]/60 dark:bg-[#a259ff]/20 text-white",
+    icon: Figma,
+  },
+  redux: {
+    name: "Redux",
+    class: "bg-[#6f48b6]/60 dark:bg-[#6f48b6]/20 text-white",
+    icon: Redux,
+  },
+  mysql: {
+    name: "MySQL",
+    class: "bg-[#004563]/60 dark:bg-[#004563]/20 text-white",
+    icon: Mysql,
+  },
+  laravel: {
+    name: "Laravel",
+    class: "bg-[#c42d2d]/60 dark:bg-[#c42d2d]/20 text-white",
+    icon: Laravel,
+  },
+  aws: {
+    name: "AWS",
+    class: "bg-[#d08513]/60 dark:bg-[#d08513]/20 text-white",
+    icon: Aws,
+  },
+  gcp: {
+    name: "GCP",
+    class: "bg-[#33a853]/60 dark:bg-[#33a853]/20 text-white",
+    icon: Gcp,
+  },
+  vercel: {
+    name: "Vercel",
+    class: "bg-[#000000]/60 dark:bg-[#ffffff]/20 text-white",
+    icon: Vercel,
+  },
+  netlify: {
+    name: "Netlify",
+    class: "bg-[#01a0a5]/60 dark:bg-[#01a0a5]/20 text-white",
+    icon: Netlify,
   },
 }
 
@@ -181,7 +289,7 @@ export const techProjects: TechProject[] = [
     description: "Mi último proyecto profesional. Un SaaS ambicioso para gestión de agencias de viajes, mayoristas y viajeros. Desde la creación de la propuesta, hasta su contratación, venta y disfrute por los viajeros en destino.",
     link: "https://app.moguplatform.com",
     image: "/projects/mogu.png",
-    tags: [techTags.NEXT, techTags.TAILWIND],
+    tags: [techTags.react, techTags.styledComponents, techTags.typescript, techTags.figma, techTags.playwright, techTags.scss, techTags.redux, techTags.mysql, techTags.php, techTags.laravel, techTags.aws, techTags.gcp],
   },
   {
     title: "wthr_now.",
@@ -189,7 +297,7 @@ export const techProjects: TechProject[] = [
     link: "https://wthrnow.vercel.app",
     github: "https://github.com/SyreWolf/wthr_now",
     image: "/projects/wthr_now.png",
-    tags: [techTags.NEXT, techTags.TAILWIND],
+    tags: [techTags.next, techTags.react, techTags.tailwind, techTags.css, techTags.javascript, techTags.vercel],
   },
   {
     title: "devLink",
@@ -197,7 +305,7 @@ export const techProjects: TechProject[] = [
     link: "https://devlink.vercel.app",
     github: "https://github.com/SyreWolf/devlink",
     image: "/projects/devlink.png",
-    tags: [techTags.NEXT, techTags.TAILWIND],
+    tags: [techTags.next, techTags.react, techTags.tailwind, techTags.css, techTags.javascript, techTags.vercel],
   },
   {
     title: "Denis Gudiña - Mi portfolio",
@@ -205,34 +313,34 @@ export const techProjects: TechProject[] = [
     link: "/",
     github: "https://github.com/SyreWolf/Denis-Gudina-Portfolio",
     image: "/projects/denis-gudina-portfolio.png",
-    tags: [techTags.NEXT, techTags.TAILWIND],
+    tags: [techTags.astro, techTags.typescript, techTags.figma, techTags.tailwind, techTags.css, techTags.netlify],
   },
   {
     title: "SupportFactory.net",
     description: "Este desarrollo fue para la página web principal de SupportFactory. Se añadieron nuevas secciones como la galería o el blog, además de modificar y modernizar las ya existentes.",
     link: "https://supportfactory.net",
     image: "/projects/supportfactory.png",
-    tags: [techTags.NEXT, techTags.TAILWIND],
+    tags: [techTags.php, techTags.javascript, techTags.figma, techTags.css, techTags.scss, techTags.docker],
   },
   {
     title: "Vertice",
     description: "Multiplataforma integral para la gestión, contratación, consulta y consumo de cursos profesionales, orientados a las oposiciones. Desarrollado para Vertice Elearning, se unificaron sus 8 plataformas en una sola gran plataforma con multiroles y módulos de operaciones.",
     link: "https://vertice.org",
     image: "/projects/vertice.png",
-    tags: [techTags.NEXT, techTags.TAILWIND],
+    tags: [techTags.react, techTags.typescript, techTags.figma, techTags.redux, techTags.css, techTags.scss, techTags.php, techTags.docker],
   },
   {
     title: "Join The Artist",
     description: "Hub de artistas para patrocinio y ventas de diversos eventos y actividades culturales. Actualmente desactivada. En la web de SupportFactory se pueden consultar capturas de la interfaz, dentro de la galería.",
     link: "https://www.supportfactory.net/projects/jointheartist.html",
     image: "/projects/jointheartist.png",
-    tags: [techTags.NEXT, techTags.TAILWIND],
+    tags: [techTags.php, techTags.javascript, techTags.figma, techTags.css, techTags.scss, techTags.docker],
   },
   {
     title: "Yes&Mar",
     description: "Plataforma para agencia de viajes en el caribe. Creada desde cero, ofrecía el flujo completo de presentación de propuesta de viaje y venta. Actualmente desactivada. En la web de SupportFactory aún se pueden consultar capturas de la interfaz, dentro de la galería.",
     image: "/projects/yes&mar.png",
-    tags: [techTags.NEXT, techTags.TAILWIND],
+    tags: [techTags.php, techTags.javascript, techTags.figma, techTags.css, techTags.scss, techTags.docker],
   }
 ]
 ---

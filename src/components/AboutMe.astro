@@ -8,5 +8,5 @@ import { aboutMeSections, profileImage, profileName } from "@/utils/Data.astro";
   >
     {aboutMeSections.map(raw => <slot set:html={raw}/> )}
   </div>
-  <img width="200" height="200" src={profileImage} alt={profileName} class="object-center order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-teal-500/5 ring-1 ring-black/70 dark:ring-white/20 ">
+  <img width="200" height="200" src={profileImage} alt={profileName} class="object-center order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-3xl bg-black/20 dark:bg-teal-500/5 ring-1 ring-black/70 dark:ring-white/20 ">
 </article>
