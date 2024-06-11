@@ -3,11 +3,12 @@ import SunIcon from "./icons/Sun.astro"
 import MoonIcon from "./icons/Moon.astro"
 import SystemIcon from "./icons/System.astro"
 import { themes } from "@/utils/Data.astro"
+import { t } from "i18next"
 ---
 
 <div class="relative ml-1 mr-1">
-  <button id="theme-toggle-btn" class="appearance-none border-none flex md:hover:scale-125 transition md:bg-transparent md:p-0 md:rounded-none rounded-full bg-slate-50/10 p-3">
-    <span class="sr-only">Elige el tema</span>
+  <button id="theme-toggle-btn" class="appearance-none border-none flex md:hover:scale-125 transition md:bg-transparent md:p-0 md:rounded-none rounded-full bg-[#353536]/70 p-3">
+    <span class="sr-only">{t('theme.select')}</span>
     <SunIcon id="light" class="theme-toggle-icon md:size-5 size-6 transition-all" />
     <MoonIcon
       id="dark"
@@ -25,7 +26,7 @@ import { themes } from "@/utils/Data.astro"
     <ul>
       {themes.map((theme) => (
         <li class="themes-menu-option px-2 py-1.5 cursor-default hover:bg-neutral-400/40 dark:hover:bg-gray-500/50 rounded-sm">
-          {theme}
+          {t(theme)}
         </li>
       ))}
     </ul>

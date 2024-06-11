@@ -1,20 +1,23 @@
 ---
 import { navItems } from "@/utils/Data.astro"
 import ThemeToggle from "./ThemeToggle.astro"
+import { t } from "i18next"
+import { LanguageSelector } from "astro-i18next/components"
 ---
 
 <header class="flex fixed top-0 z-10 items-center justify-end md:justify-center w-full mx-auto mt-2">
-  <nav class="flex px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-50 justify-center items-center">
+  <nav class="flex md:flex-row flex-col px-3 text-sm font-medium rounded-full text-gray-600 dark:text-gray-50 justify-center md:items-center items-end"  >
     {navItems.map((link) => (
         <a
           class="hidden md:block relative px-2 py-2 transition hover:text-teal-400 dark:hover:text-teal-400"
           aria-label={link.label}
-          href={link.url}
+          href={t(link.url) || link.url}
         >
-          {link.title}
+          {t(link.title)}
         </a>
     ))}
     <ThemeToggle />
+    <LanguageSelector showFlag class="cursor-pointer ml-4 md:mt-0 mt-4 p-2 md:p-0 rounded-md bg-[#353536]/70 md:bg-transparent outline-none border-r-[0.6rem] border-transparent"/>
   </nav>
 </header>
 

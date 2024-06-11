@@ -1,45 +1,46 @@
 ---
 import Badge from "@/components/Badge.astro"
 import SocialPill from "@/components/SocialPill.astro"
-import { heroInfo, socials } from "@/utils/Data.astro"
+import { profileImage, socials } from "@/utils/Data.astro"
+import { t } from "i18next"
 ---
 
 <div class="max-w-xl">
   <div class="flex gap-4 mb-6">
     <img
       class="rounded-full shadow-lg size-16"
-      src={heroInfo.imageSrc}
-      alt={heroInfo.imageAlt}
+      src={profileImage}
+      alt={t('meta.name')}
       decoding="async"
       loading="lazy"
     />
     <a
-      href={heroInfo.badgeLink}
+      href={t('socials.linked_in.url')}
       target="_blank"
       rel="noopener"
       class="flex items-center transition md:justify-center md:hover:scale-105"
     >
-      <Badge>{heroInfo.badgeText}</Badge>
+      <Badge>{t("hero.badge_text")}</Badge>
     </a>
   </div>
   <h1
     class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
   >
-    {heroInfo.header}
+    {t('hero.header')}
   </h1>
   <p
     class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-teal-200 [&>strong]:text-teal-500 [&>strong]:font-semibold dark:text-gray-300"
   >
-    <strong>{heroInfo.role}</strong> 
-    <span>{heroInfo.experience}</span> 
-    <span>{heroInfo.location}</span> 
-    <span>{heroInfo.description}</span>
+    <strong>{t('hero.role')}</strong> 
+    <span>{t('hero.experience')}</span> 
+    <span>{t('hero.location')}</span> 
+    <span>{t('hero.description')}</span>
   </p>
   <nav class="flex flex-wrap gap-4 mt-8">
     {socials.map((social) => (
-      <SocialPill href={social.link}>
+      <SocialPill href={t(social.link)}>
         <social.icon class="size-4" />
-        {social.name}
+        {t(social.name)}
       </SocialPill>
     ))}
   </nav>

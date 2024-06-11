@@ -1,27 +1,25 @@
 ---
-import type { MetaProps } from "@/types/types"
 import "@fontsource-variable/onest"
+import { HeadHrefLangs } from "astro-i18next/components"
 import { ViewTransitions } from "astro:transitions"
+import i18next, { t } from "i18next"
 import Footer from "../components/Footer.astro"
 import Header from "../components/Header.astro"
 
-type Props = MetaProps
-
-const { description, title } = Astro.props
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang={i18next.language}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content={description} />
+    <meta name="description" content={t('meta.description')} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <title>{t('meta.title')}</title>
+    <HeadHrefLangs />
     <ViewTransitions />
   </head>
-
   <body class="relative text-black dark:text-white">
     <div class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full dark:bg-[#000000] dark:bg-[radial-gradient(#ffffff33_1px,#1F1F1F_1px)] bg-[#F2F2F2] bg-[radial-gradient(#D5D7DB_1px,transparent_1px)] bg-[size:20px_20px]"/>
     <Header />

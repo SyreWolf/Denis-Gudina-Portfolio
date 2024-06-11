@@ -28,318 +28,285 @@ import StyledComponents from "@/components/icons/StyledComponents.astro";
 import Tailwind from "@/components/icons/Tailwind.astro";
 import Typescript from "@/components/icons/Typescript.astro";
 import Vercel from "@/components/icons/Vercel.astro";
-import type { Hero, MetaProps, NavItem, Section, Social, TechProject, TechTag, TimelineItem } from "@/types/types";
+import type { NavItem, Section, Social, TechProject, TechTag, TimelineItem } from "@/types/types";
 
-export const themes = ["Light", "Dark", "System"]
+export const themes = ['theme.options.light', 'theme.options.dark', 'theme.options.system']
 export const profileImage = '/denis-gudina.webp'
-export const profileName = 'Denis Gudiña'
-export const linkedInUrl = 'https://linkedin.com/in/denisgudina'
-export const emailUrl = 'mailto:denisgn99@gmail.com'
-
-export const heroInfo: Hero =  {
-  imageSrc: profileImage,
-  imageAlt: profileName,
-  badgeText: "Disponible para trabajar",
-  badgeLink: linkedInUrl,
-  header: `Hola, soy ${profileName}`,
-  experience: " - 4 años de experiencia.",
-  role: "UX/UI Engineer | Frontend Engineer",
-  location: "Madrid, España 🇪🇸. ",
-  description: "Especializado en el desarrollo de interfaces y sistemas de diseño para productos digitales."
-}
-
-export const socials: Social[] =  [
-  {
-    name: "LinkedIn",
-    link: linkedInUrl,
-    icon: LinkedIn,
-  },
-  {
-    name: "Contáctame",
-    link: emailUrl,
-    icon: Mail,
-  }
-]
-
-export const aboutMeSections: string[] = [
-  `<p>Me llamo Denis. Empecé en la programación como Diseñador y Desarrollador de Videojuegos,
-    pero pronto descubrí mi pasión por las aplicaciones web. Desde hace algo más de 4 años,
-    <strong>ideo y desarrollo interfaces fluidas, escalables y sostenibles.</strong></p>`,
-  `<p>Como profesional de la tecnología, me gustaría profundizar en el mundo de la interfaz 
-    y la experiencia de usuario, estoy interesado en trabajar entre el diseño y el desarrollo, 
-    con <strong>Design Systems e interfaces bien estructuradas</strong>.</p>`,
-  `<p>Apasionado del fitness, los videojuegos, la filosofía, la ciencia ficción, la fantasía, 
-    la actualidad y el senderismo.</p>`,
-]
 
 export const navItems: NavItem[] = [
   {
-    title: "Inicio",
-    label: "start",
-    url: "/#start",
+    title: 'nav.home',
+    label: 'home',
+    url: '/#home',
   },
   {
-    title: "Experiencia",
-    label: "experience",
-    url: "/#experience",
+    title: 'nav.experience',
+    label: 'experience',
+    url: '/#experience',
   },
   {
-    title: "Educación",
-    label: "education",
-    url: "/#education",
+    title: 'nav.education',
+    label: 'education',
+    url: '/#education',
   },
   {
-    title: "Proyectos",
-    label: "projects",
-    url: "/#projects",
+    title: 'nav.projects',
+    label: 'projects',
+    url: '/#projects',
   },
   {
-    title: "Sobre mí",
-    label: "about-me",
-    url: "/#about-me",
+    title: 'nav.about_me',
+    label: 'about-me',
+    url: '/#about-me',
   },
   {
-    title: "Contacto",
-    label: "contact",
-    url: emailUrl,
+    title: 'nav.contact',
+    label: 'contact',
+    url: 'socials.contact_me.url',
   },
 ]
 
+
 export const experienceTimeline: TimelineItem[] = [
   {
-    date: "dic. 2022 - actualidad",
-    title: "UI/UX Engineer | Frontend Engineer",
-    place: "MOGU",
-    description:
-      "En MOGU mantuve y evolucioné la plataforma para llegar a más de 200 agencias de viajes de pago y más de 100k usuarios. Me centré en el diseño y desarrollo de la interfaz. Trabajé con Figma, React, Typescript, Redux, Amplitude y Playwright. En ocasiones puntuales desarrollé con PHP, Laravel y MySQL.",
+    date: 'experience.mogu.date',
+    title: 'experience.mogu.title',
+    place: 'experience.mogu.place',
+    description: 'experience.mogu.description',
   },
   {
-    date: "sept. 2021 - abr. 2022",
-    title: "Frontend Engineer | Brand Designer",
-    place: "Nebula Space Market",
-    description:
-      "Uno de mis primeros emprendimientos de software, como co-fundador e ingeniero de frontend/UX/UI, pude profundizar en el desarrollo de e-commerce con integraciones de dApps.",
+    date: 'experience.nebula.date',
+    title: 'experience.nebula.title',
+    place: 'experience.nebula.place',
+    description: 'experience.nebula.description',
   },
   {
-    date: "jul. 2020 - mar. 2022",
-    title: "UI/UX Engineer | Frontend Engineer",
-    place: "SupportFactory.net",
-    description:
-      "En SupportFactory me dediqué a la gestión, diseño, mantenimiento y desarrollo de las interfaces de varios proyectos, mejorando su calidad a través de soluciones sencillas y escalables. También tuve el rol de crear la imagen de marca de algunos proyectos. Trabajé con Photoshop, Illustrator, Javascript, HTML, CSS y PHP.",
+    date: 'experience.supportfactory.date',
+    title: 'experience.supportfactory.title',
+    place: 'experience.supportfactory.place',
+    description: 'experience.supportfactory.description',
   },
   {
-    date: "ene. 2020 - nov. 2020",
-    title: "Frontend Engineer | Brand Designer",
-    place: "BawyDesign",
-    description:
-      "Mi principal función fue ayudar en la creación del diseño de marca y el e-commerce de la marca. Fue una buena oportunidad para trabajar con conocidos y mejorar mis habilidades de desarrollo.",
+    date: 'experience.bawy.date',
+    title: 'experience.bawy.title',
+    place: 'experience.bawy.place',
+    description: 'experience.bawy.description',
   },
 ]
 
 export const educationTimeline: TimelineItem[] = [
   {
-    date: "sep. 2016 - jul. 2020",
-    title: "Grado en Diseño y Desarrollo de Videojuegos, Game Designer",
-    place: "Universidad Rey Juan Carlos",
-    description:
-      "Como amante de los videojuegos, el diseño y la tecnología, esta fue la carrera que elegir. Con un currículo variado, pude aprender sobre disciplinas muy variadas, desde la programación, hasta el diseño, pasando por la gestión de equipos, las matemáticas y la física.",
+    date: 'education.urjc.date',
+    title: 'education.urjc.title',
+    place: 'education.urjc.place',
+    description: 'education.urjc.description'
   }
 ]
 
 export const pageSections: Section[] = [
   {
-    title: "Experiencia",
-    id: "experience",
+    title: 'nav.experience',
+    id: 'experience',
     icon: Briefcase,
     component: Timeline,
     props: {timeline: experienceTimeline}
   },
   {
-    title: "Educación",
-    id: "education",
+    title: 'nav.education',
+    id: 'education',
     icon: School,
     component: Timeline,
     props: {timeline: educationTimeline}
   }, 
   {
-    title: "Proyectos",
-    id: "projects",
+    title: 'nav.projects',
+    id: 'projects',
     icon: Code,
     component: Projects
   },
   {
-    title: "Sobre mí",
-    id: "about-me",
+    title: 'nav.about_me',
+    id: 'about-me',
     icon: ProfileCheck,
     component: AboutMe
   }
 ]
 
-export const metaProps: MetaProps = {
-  title: `Portfolio de ${profileName} - UX/UI Developer | Frontend Engineer con 4 años de experiencia`,
-  description: `Contrata a ${profileName} para crear tu aplicación web. UX/UI Developer | Frontend Engineer.`,
-}
+export const socials: Social[] =  [
+  {
+    name: 'socials.linked_in.label',
+    link: 'socials.linked_in.url',
+    icon: LinkedIn,
+  },
+  {
+    name: 'socials.contact_me.label',
+    link: 'socials.contact_me.url',
+    icon: Mail,
+  }
+]
+
+export const aboutMeSections: string[] = ['about_me.line1', 'about_me.line2', 'about_me.line3']
 
 export const techTags: { [key: string]: TechTag } = {
   next: {
-    name: "Next.js",
-    class: "bg-[#000000]/60 dark:bg-[#ffffff]/20 text-white",
+    name: 'tech.next',
+    class: 'bg-[#000000]/60 dark:bg-[#ffffff]/20 text-white',
     icon: NextJS,
   },
   tailwind: {
-    name: "Tailwind CSS",
-    class: "bg-[#38bdf8]/60 dark:bg-[#38bdf8]/20 text-white",
+    name: 'tech.tailwind',
+    class: 'bg-[#38bdf8]/60 dark:bg-[#38bdf8]/20 text-white',
     icon: Tailwind,
   },
   react: {
-    name: "React",
-    class: "bg-[#01a4c2]/60 dark:bg-[#01a4c2]/20 text-white",
+    name: 'tech.react',
+    class: 'bg-[#01a4c2]/60 dark:bg-[#01a4c2]/20 text-white',
     icon: React,
   },
   astro: {
-    name: "Astro",
-    class: "bg-[#ed5908]/60 dark:bg-[#ed5908]/20 text-white",
+    name: 'tech.astro',
+    class: 'bg-[#ed5908]/60 dark:bg-[#ed5908]/20 text-white',
     icon: AstroIcon,
   },
   styledComponents: {
-    name: "Styled Components",
-    class: "bg-[#bc7b9c]/60 dark:bg-[#bc7b9c]/20 text-white",
+    name: 'tech.styled_components',
+    class: 'bg-[#bc7b9c]/60 dark:bg-[#bc7b9c]/20 text-white',
     icon: StyledComponents,
   },
   typescript: {
-    name: "Typescript",
-    class: "bg-[#3078c6]/60 dark:bg-[#3078c6]/20 text-white",
+    name: 'tech.typescript',
+    class: 'bg-[#3078c6]/60 dark:bg-[#3078c6]/20 text-white',
     icon: Typescript,
   },
   javascript: {
-    name: "Javascript",
-    class: "bg-[#efdb50]/60 dark:bg-[#efdb50]/20 text-white",
+    name: 'tech.javascript',
+    class: 'bg-[#efdb50]/60 dark:bg-[#efdb50]/20 text-white',
     icon: Javascript,
   },
   playwright: {
-    name: "Playwright",
-    class: "bg-[#2eaa33]/60 dark:bg-[#2eaa33]/20 text-white",
+    name: 'tech.playwright',
+    class: 'bg-[#2eaa33]/60 dark:bg-[#2eaa33]/20 text-white',
     icon: Playwright,
   },
   php: {
-    name: "PHP",
-    class: "bg-[#000000]/60 dark:bg-[#f0f0f0]/20 text-white",
+    name: 'tech.php',
+    class: 'bg-[#000000]/60 dark:bg-[#f0f0f0]/20 text-white',
     icon: Php,
   },
   docker: {
-    name: "Docker",
-    class: "bg-[#008fe2]/60 dark:bg-[#008fe2]/20 text-white",
+    name: 'tech.docker',
+    class: 'bg-[#008fe2]/60 dark:bg-[#008fe2]/20 text-white',
     icon: Docker,
   },
   css: {
-    name: "CSS",
-    class: "bg-[#60bde4]/60 dark:bg-[#60bde4]/20 text-white",
+    name: 'tech.css',
+    class: 'bg-[#60bde4]/60 dark:bg-[#60bde4]/20 text-white',
     icon: Css,
   },
   scss: {
-    name: "SCSS",
-    class: "bg-[#bd5e93]/60 dark:bg-[#bd5e93]/20 text-white",
+    name: 'tech.scss',
+    class: 'bg-[#bd5e93]/60 dark:bg-[#bd5e93]/20 text-white',
     icon: Scss,
   },
   figma: {
-    name: "Figma",
-    class: "bg-[#a259ff]/60 dark:bg-[#a259ff]/20 text-white",
+    name: 'tech.figma',
+    class: 'bg-[#a259ff]/60 dark:bg-[#a259ff]/20 text-white',
     icon: Figma,
   },
   redux: {
-    name: "Redux",
-    class: "bg-[#6f48b6]/60 dark:bg-[#6f48b6]/20 text-white",
+    name: 'tech.redux',
+    class: 'bg-[#6f48b6]/60 dark:bg-[#6f48b6]/20 text-white',
     icon: Redux,
   },
   mysql: {
-    name: "MySQL",
-    class: "bg-[#004563]/60 dark:bg-[#004563]/20 text-white",
+    name: 'tech.mysql',
+    class: 'bg-[#004563]/60 dark:bg-[#004563]/20 text-white',
     icon: Mysql,
   },
   laravel: {
-    name: "Laravel",
-    class: "bg-[#c42d2d]/60 dark:bg-[#c42d2d]/20 text-white",
+    name: 'tech.laravel',
+    class: 'bg-[#c42d2d]/60 dark:bg-[#c42d2d]/20 text-white',
     icon: Laravel,
   },
   aws: {
-    name: "AWS",
-    class: "bg-[#d08513]/60 dark:bg-[#d08513]/20 text-white",
+    name: 'tech.aws',
+    class: 'bg-[#d08513]/60 dark:bg-[#d08513]/20 text-white',
     icon: Aws,
   },
   gcp: {
-    name: "GCP",
-    class: "bg-[#33a853]/60 dark:bg-[#33a853]/20 text-white",
+    name: 'tech.gcp',
+    class: 'bg-[#33a853]/60 dark:bg-[#33a853]/20 text-white',
     icon: Gcp,
   },
   vercel: {
-    name: "Vercel",
-    class: "bg-[#000000]/60 dark:bg-[#ffffff]/20 text-white",
+    name: 'tech.vercel',
+    class: 'bg-[#000000]/60 dark:bg-[#ffffff]/20 text-white',
     icon: Vercel,
   },
   netlify: {
-    name: "Netlify",
-    class: "bg-[#01a0a5]/60 dark:bg-[#01a0a5]/20 text-white",
+    name: 'tech.netlify',
+    class: 'bg-[#01a0a5]/60 dark:bg-[#01a0a5]/20 text-white',
     icon: Netlify,
   },
 }
 
 export const techProjects: TechProject[] = [
   {
-    title: "MOGU",
-    description: "Mi último proyecto profesional. Un SaaS ambicioso para gestión de agencias de viajes, mayoristas y viajeros. Desde la creación de la propuesta, hasta su contratación, venta y disfrute por los viajeros en destino.",
-    link: "https://app.moguplatform.com",
-    image: "/projects/mogu.webp",
+    title: 'projects.mogu.title',
+    description: 'projects.mogu.description',
+    link: 'https://app.moguplatform.com',
+    image: '/projects/mogu.webp',
     tags: [techTags.react, techTags.styledComponents, techTags.typescript, techTags.figma, techTags.playwright, techTags.scss, techTags.redux, techTags.mysql, techTags.php, techTags.laravel, techTags.aws, techTags.gcp],
   },
   {
-    title: "wthr_now.",
-    description: "Una prueba de concepto de diversas librerías de componentes y la API abierta de OpenWeatherMap, todo unido a través de una UI simple pero estilizada.",
-    link: "https://wthrnow.vercel.app",
-    github: "https://github.com/SyreWolf/wthr_now",
-    image: "/projects/wthr_now.webp",
+    title: 'projects.wthr_now.title',
+    description: 'projects.wthr_now.description',
+    link: 'https://wthrnow.vercel.app',
+    github: 'https://github.com/SyreWolf/wthr_now',
+    image: '/projects/wthr_now.webp',
     tags: [techTags.next, techTags.react, techTags.tailwind, techTags.css, techTags.javascript, techTags.vercel],
   },
   {
-    title: "devLink",
-    description: "Prueba de concepto para probar distintos tipos de animaciones, librerías de Drag & Drop para hacer flujos de interacción complejos y filtrado de datos, con un guiño a Trello.",
-    link: "https://devlink.vercel.app",
-    github: "https://github.com/SyreWolf/devlink",
-    image: "/projects/devlink.webp",
+    title: 'projects.devlink.title',
+    description: 'projects.devlink.description',
+    link: 'https://devlink.vercel.app',
+    github: 'https://github.com/SyreWolf/devlink',
+    image: '/projects/devlink.webp',
     tags: [techTags.next, techTags.react, techTags.tailwind, techTags.css, techTags.javascript, techTags.vercel],
   },
   {
-    title: "Denis Gudiña - Mi portfolio",
-    description: "Creación de un portfolio a través de Astro. Componentes reutilizables y fácilmente modificables de manera centralizada.",
-    link: "/",
-    github: "https://github.com/SyreWolf/Denis-Gudina-Portfolio",
-    image: "/projects/denis-gudina-portfolio.webp",
+    title: 'projects.my_portfolio.title',
+    description: 'projects.my_portfolio.description',
+    link: '/',
+    github: 'https://github.com/SyreWolf/Denis-Gudina-Portfolio',
+    image: '/projects/denis-gudina-portfolio.webp',
     tags: [techTags.astro, techTags.typescript, techTags.figma, techTags.tailwind, techTags.css, techTags.netlify],
   },
   {
-    title: "SupportFactory.net",
-    description: "Este desarrollo fue para la página web principal de SupportFactory. Se añadieron nuevas secciones como la galería o el blog, además de modificar y modernizar las ya existentes.",
-    link: "https://supportfactory.net",
-    image: "/projects/supportfactory.webp",
+    title: 'projects.supportfactory_net.title',
+    description: 'projects.supportfactory_net.description',
+    link: 'https://supportfactory.net',
+    image: '/projects/supportfactory.webp',
     tags: [techTags.php, techTags.javascript, techTags.figma, techTags.css, techTags.scss, techTags.docker],
   },
   {
-    title: "Vertice",
-    description: "Multiplataforma integral para la gestión, contratación, consulta y consumo de cursos profesionales, orientados a las oposiciones. Desarrollado para Vertice Elearning, se unificaron sus 8 plataformas en una sola gran plataforma con multiroles y módulos de operaciones.",
-    link: "https://vertice.org",
-    image: "/projects/vertice.webp",
+    title: 'projects.vertice.title',
+    description: 'projects.vertice.description',
+    link: 'https://vertice.org',
+    image: '/projects/vertice.webp',
     tags: [techTags.react, techTags.typescript, techTags.figma, techTags.redux, techTags.css, techTags.scss, techTags.php, techTags.docker],
   },
   {
-    title: "Join The Artist",
-    description: "Hub de artistas para patrocinio y ventas de diversos eventos y actividades culturales. Actualmente desactivada. En la web de SupportFactory se pueden consultar capturas de la interfaz, dentro de la galería.",
-    link: "https://www.supportfactory.net/projects/jointheartist.html",
-    image: "/projects/jointheartist.webp",
+    title: 'projects.join_the_artist.title',
+    description: 'projects.join_the_artist.description',
+    link: 'https://www.supportfactory.net/projects/jointheartist.html',
+    image: '/projects/jointheartist.webp',
     tags: [techTags.php, techTags.javascript, techTags.figma, techTags.css, techTags.scss, techTags.docker],
   },
   {
-    title: "Yes&Mar",
-    description: "Plataforma para agencia de viajes en el caribe. Creada desde cero, ofrecía el flujo completo de presentación de propuesta de viaje y venta. Actualmente desactivada. En la web de SupportFactory aún se pueden consultar capturas de la interfaz, dentro de la galería.",
-    image: "/projects/yes&mar.webp",
+    title: 'projects.yes&mar.title',
+    description: 'projects.yes&mar.description',
+    image: '/projects/yes&mar.webp',
     tags: [techTags.php, techTags.javascript, techTags.figma, techTags.css, techTags.scss, techTags.docker],
   }
 ]

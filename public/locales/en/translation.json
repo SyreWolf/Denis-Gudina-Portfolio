@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "title": "Denis Gudina's Portfolio - UX/UI Developer | Frontend Engineer with 4 years of experience",
+    "description": "Contact Denis Gudina to create your web application. UX/UI Developer | Frontend Engineer.",
+    "name": "Denis Gudina"
+  },
+  "theme": {
+    "select": "Choose the theme",
+    "options": {
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    }
+  },
+  "hero": {
+    "badge_text": "Available for work",
+    "header": "Hi, I'm Denis Gudina",
+    "experience": " - 4 years of experience.",
+    "role": "UX/UI Engineer | Frontend Engineer",
+    "location": "Madrid, Spain 🇪🇸. ",
+    "description": "Specialized in interface development and design systems for digital products."
+  },
+  "socials": {
+    "linked_in": {
+      "label": "LinkedIn",
+      "url": "https://linkedin.com/in/denisgudina/en"
+    },
+    "contact_me": {
+      "label": "Contact Me",
+      "url": "mailto:denisgn99@gmail.com"
+    }
+  },
+  "about_me": {
+    "line1": "<p>My name is Denis. I started in programming as a Game Designer and Developer, but I soon discovered my passion for web applications. Since more than 4 years ago, <strong>I design and develop fluid, scalable and sustainable interfaces.</strong></p>",
+    "line2": "<p>As a technology professional, I would like to go deeper into the world of user interface and user experience, I am interested in working between design and development, with <strong>Design Systems and well-structured interfaces</strong>.</p>",
+    "line3": "<p>Passionate about fitness, video games, philosophy, science fiction, fantasy, current affairs and hiking.</p>"
+  },
+  "nav": {
+    "home": "Home",
+    "experience": "Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "about_me": "About me",
+    "contact": "Contact"
+  },
+  "tech": {
+    "next": "Next.js",
+    "tailwind": "Tailwind CSS",
+    "react": "React",
+    "astro": "Astro",
+    "styled_components": "Styled Components",
+    "typescript": "Typescript",
+    "javascript": "Javascript",
+    "playwright": "Playwright",
+    "php": "PHP",
+    "docker": "Docker",
+    "css": "CSS",
+    "scss": "SCSS",
+    "figma": "Figma",
+    "redux": "Redux",
+    "mysql": "MySQL",
+    "laravel": "Laravel",
+    "aws": "AWS",
+    "gcp": "GCP",
+    "vercel": "Vercel",
+    "netlify": "Netlify"
+  },
+  "experience": {
+    "mogu": {
+      "date": "dec. 2022 - jun. 2024",
+      "title": "UI/UX Engineer | Frontend Engineer",
+      "place": "MOGU",
+      "description": "At MOGU I maintained and evolved the platform to reach more than 200 paying travel agencies and more than 100k users. I focused on interface design and development. I worked with Figma, React, Typescript, Redux, Amplitude and Playwright. Occasionally I developed with PHP, Laravel and MySQL."
+    },
+    "nebula": {
+      "date": "sept. 2021 - apr. 2022",
+      "title": "Frontend Engineer | Brand Designer",
+      "place": "Nebula Space Market",
+      "description": "One of my first software ventures, as co-founder and frontend/UX/UI engineer, I was able to delve into e-commerce development with dApps integrations."
+    },
+    "supportfactory": {
+      "date": "jul. 2020 - mar. 2022",
+      "title": "UI/UX Engineer | Frontend Engineer",
+      "place": "SupportFactory.net",
+      "description": "At SupportFactory I was involved in the management, design, maintenance and development of the interfaces of several projects, improving their quality through simple and scalable solutions. I also had the role of creating the brand image of some projects. I worked with Photoshop, Illustrator, Javascript, HTML, CSS and PHP."
+    },
+    "bawy": {
+      "date": "jan. 2020 - nov. 2020",
+      "title": "Frontend Engineer | Brand Designer",
+      "place": "BawyDesign",
+      "description": "My main role was to assist in the creation of the brand design and e-commerce for the brand. It was a good opportunity to work with acquaintances and improve my development skills."
+    }
+  },
+  "education": {
+    "urjc": {
+      "date": "sep. 2016 - jul. 2020",
+      "title": "Degree in Video Game Design and Development, Game Designer",
+      "place": "Rey Juan Carlos University",
+      "description": "As a lover of video games, design and technology, this was the career of choice. With a varied curriculum, I was able to learn about a wide range of disciplines, from programming, to design, to team management, to mathematics and physics."
+    }
+  },
+  "projects": {
+    "actions": {
+      "code": "Code",
+      "preview": "Preview"
+    },
+    "mogu": {
+      "title": "MOGU",
+      "description": "My latest professional project. An ambitious SaaS for managing travel agencies, wholesalers and travelers. From the creation of the proposal, to its contracting, sale and enjoyment by travelers at destination."
+    },
+    "wthr_now": {
+      "title": "wthr_now.",
+      "description": "A proof of concept of several component libraries and the OpenWeatherMap open API, all tied together with a simple but stylish UI."
+    },
+    "devlink": {
+      "title": "devLink",
+      "description": "Proof of concept to test different types of animations, Drag & Drop libraries to make complex interaction flows and data filtering, with a nod to Trello."
+    },
+    "my_portfolio": {
+      "title": "Denis Gudina - My portfolio",
+      "description": "Creation of a portfolio through Astro. Reusable and easily modifiable components in a centralized way."
+    },
+    "supportfactory_net": {
+      "title": "SupportFactory.net",
+      "description": "This development was for the main SupportFactory website. New sections such as the gallery or the blog were added, as well as modifying and modernizing the existing ones."
+    },
+    "vertice": {
+      "title": "Vertice",
+      "description": "Multiplatform for the comprehensive management, recruitment, consultation and consumption of professional courses, oriented to oppositions. Developed for Vertice Elearning, its 8 platforms were unified into a single large platform with multiroles and operations modules."
+    },
+    "join_the_artist": {
+      "title": "Join The Artist",
+      "description": "Hub of artists for sponsorship and sales of various cultural events and activities. Currently deactivated. Screenshots of the interface are available on the SupportFactory website, inside the gallery."
+    },
+    "yes&mar": {
+      "title": "Yes&Mar",
+      "description": "Platform for a Caribbean travel agency. Created from scratch, it offered the complete flow of travel proposal presentation and sales. Currently deactivated. On the SupportFactory website you can still see screenshots of the interface, inside the gallery."
+    }
+  }
+}

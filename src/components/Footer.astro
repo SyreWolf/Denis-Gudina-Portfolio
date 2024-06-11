@@ -1,5 +1,5 @@
 ---
-import { emailUrl, linkedInUrl } from "@/utils/Data.astro"
+import { t } from "i18next"
 
 const currentYear = new Date().getFullYear()
 ---
@@ -8,14 +8,14 @@ const currentYear = new Date().getFullYear()
   <div class="rounded-lg w-full max-w-screen-xl mx-auto md:flex md:items-center md:justify-between py-4">
     <span class="text-sm sm:text-center text-zinc-800/90 dark:text-zinc-200/90">
       © {currentYear}
-      <a href={linkedInUrl} class="hover:underline">Denis Gudiña</a>
+      <a href={t('socials.linked_in.url')} class="hover:underline">{t('meta.name')}</a>
     </span>
     <ul class="flex flex-wrap items-center mt-3 text-sm font-medium dark:text-white/90 sm:mt-0">
       <li>
-        <a href="/#about-me" class="hover:underline me-4 md:me-6">Sobre mí</a>
+        <a href="/#about-me" class="hover:underline me-4 md:me-6">{t('nav.about_me')}</a>
       </li>
       <li>
-        <a id="contact" href={emailUrl} class="hover:underline">Contacto</a>
+        <a id="contact" href={t('socials.contact_me.url')} class="hover:underline">{t('nav.contact')}</a>
       </li>
     </ul>
   </div>
