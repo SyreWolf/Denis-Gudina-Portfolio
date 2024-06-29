@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Denis Gudina's Portfolio - Software Engineer | UX/UI Developer with 4 years of experience",
-    "description": "Contact Denis Gudina to create your web application. Software Engineer | UX/UI Developer.",
+    "title": "Denis Gudina's Portfolio - Software Engineer with 4 years of experience",
+    "description": "Contact Denis Gudina to create your web application. Software Engineer.",
     "name": "Denis Gudina"
   },
   "theme": {
@@ -16,8 +16,8 @@
     "badge_text": "Available for work",
     "header": "Hi, I'm Denis Gudina",
     "experience": " - 4 years of experience.",
-    "role": "Software Engineer | UX/UI Engineer",
-    "location": "Madrid, Spain 🇪🇸. ",
+    "role": "Software Engineer",
+    "location": "Madrid, Spain. ",
     "description": "Specialized in web application development and design systems for digital products."
   },
   "socials": {
@@ -68,27 +68,27 @@
   "experience": {
     "mogu": {
       "date": "dec. 2022 - jun. 2024",
-      "title": "Software Engineer | UI/UX Engineer",
+      "title": "Software Engineer",
       "place": "MOGU",
-      "description": "At MOGU I maintained and evolved the platform to reach more than 200 paying travel agencies and more than 100k users. I focused on accompanying the business layer to take requirements and thus guide the design and development of the web application. I worked with Figma, React, Typescript, Redux, Amplitude, Playwright, PHP, Laravel and MySQL."
+      "description": "At MOGU I maintained and evolved the platform to reach more than 200 paying travel agencies and more than 100k users. I focused on accompanying the business layer to take requirements and thus guide the design and development of the web application. I worked with React, Typescript, PHP, Laravel, MySQL, Figma, Redux, Amplitude, Playwright."
     },
     "nebula": {
       "date": "sept. 2021 - apr. 2022",
-      "title": "Frontend Engineer | Brand Designer",
+      "title": "Software Engineer | Brand Designer",
       "place": "Nebula Space Market",
-      "description": "One of my first software ventures, as co-founder and frontend/UX/UI engineer, I was able to delve into e-commerce development with dApps integrations."
+      "description": "As co-founder and software engineer, I was able to delve into e-commerce development with dApps integrations."
     },
     "supportfactory": {
       "date": "jul. 2020 - mar. 2022",
-      "title": "Software Engineer | UI/UX Engineer",
+      "title": "Software Engineer",
       "place": "SupportFactory.net",
-      "description": "At SupportFactory I was involved in the management, design, maintenance and development of the web applications of several projects, improving their quality through simple and scalable solutions. I also had the role of creating the brand image of some projects. I worked with React, Typescript, Figma, Photoshop, Illustrator, Javascript, HTML, CSS, PHP and MySQL."
+      "description": "At SupportFactory I was involved in the management, design, maintenance and development of the web applications of several projects, improving their quality through simple and scalable solutions. I also had the role of creating the brand image of some projects. I worked with React, Typescript, PHP, MySQL, CSS, Figma, Photoshop, Illustrator."
     },
     "bawy": {
       "date": "jan. 2020 - nov. 2020",
-      "title": "Frontend Engineer | Brand Designer",
+      "title": "Software Engineer | Brand Designer",
       "place": "BawyDesign",
-      "description": "My main role was to assist in the creation of the brand design and e-commerce for the brand. It was a good opportunity to work with acquaintances and improve my development skills."
+      "description": "My main role was to assist in the creation of the brand design and e-commerce for the brand."
     }
   },
   "education": {
