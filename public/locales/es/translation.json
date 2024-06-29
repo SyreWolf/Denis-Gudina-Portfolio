@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Portfolio de Denis Gudiña - UX/UI Developer | Frontend Engineer con 4 años de experiencia",
-    "description": "Contacta a Denis Gudiña para crear tu aplicación web. UX/UI Developer | Frontend Engineer.",
+    "title": "Portfolio de Denis Gudiña - Software Engineer | UX/UI Engineer con 4 años de experiencia",
+    "description": "Contacta a Denis Gudiña para crear tu aplicación web. Software Engineer | UX/UI Engineer.",
     "name": "Denis Gudiña"
   },
   "theme": {
@@ -16,9 +16,9 @@
     "badge_text": "Disponible para trabajar",
     "header": "Hola, soy Denis Gudiña",
     "experience": " - 4 años de experiencia.",
-    "role": "UX/UI Engineer | Frontend Engineer",
+    "role": "Software Engineer | UX/UI Engineer",
     "location": "Madrid, España 🇪🇸. ",
-    "description": "Especializado en el desarrollo de interfaces y sistemas de diseño para productos digitales."
+    "description": "Especializado en el desarrollo de aplicaciones y sistemas de diseño para productos digitales."
   },
   "socials": {
     "linked_in": {
@@ -31,9 +31,9 @@
     }
   },
   "about_me": {
-    "line1": "<p>Me llamo Denis. Empecé en la programación como Diseñador y Desarrollador de Videojuegos, pero pronto descubrí mi pasión por las aplicaciones web. Desde hace algo más de 4 años, <strong>ideo y desarrollo interfaces fluidas, escalables y sostenibles.</strong></p>",
-    "line2": "<p>Como profesional de la tecnología, me gustaría profundizar en el mundo de la interfaz y la experiencia de usuario, estoy interesado en trabajar entre el diseño y el desarrollo, con <strong>Design Systems e interfaces bien estructuradas</strong>.</p>",
-    "line3": "<p>Apasionado del fitness, los videojuegos, la filosofía, la ciencia ficción, la fantasía, la actualidad y el senderismo.</p>"
+    "line1": "<p>Me llamo Denis. Empecé en la programación como Diseñador y Desarrollador de Videojuegos, pero pronto descubrí mi pasión por las aplicaciones web. Desde hace algo más de 4 años, <strong>ideo y desarrollo aplicaciones web fluidas, escalables y sostenibles.</strong></p>",
+    "line2": "<p>Como profesional de la tecnología, estoy profundizando en la intersección entre el diseño y el desarrollo. Me atraen las <strong>aplicaciones con un diseño bien estructurado</strong>, así como los proyectos relacionados con la <strong>IA generativa</strong>.</p>",
+    "line3": "<p>Apasionado del fitness, las artes marciales, la música, la guitarra, los videojuegos, la filosofía, la ciencia ficción, la fantasía, la actualidad y el senderismo.</p>"
   },
   "nav": {
     "home": "Inicio",
@@ -68,9 +68,9 @@
   "experience": {
     "mogu": {
       "date": "dic. 2022 - jun. 2024",
-      "title": "UI/UX Engineer | Frontend Engineer",
+      "title": "Software Engineer | UI/UX Engineer",
       "place": "MOGU",
-      "description": "En MOGU mantuve y evolucioné la plataforma para llegar a más de 200 agencias de viajes de pago y más de 100k usuarios. Me centré en el diseño y desarrollo de la interfaz. Trabajé con Figma, React, Typescript, Redux, Amplitude y Playwright. En ocasiones puntuales desarrollé con PHP, Laravel y MySQL."
+      "description": "En MOGU mantuve y evolucioné la plataforma para integrar a más de 200 agencias de viajes en la plataforma de pago y más de 100k usuarios. Me centré en acompañar a la capa de negocio para la toma de requisitos y así orientar el diseño y desarrollo de la aplicación. Trabajé con Figma, React, Typescript, Redux, Amplitude, Playwright, PHP, Laravel y MySQL."
     },
     "nebula": {
       "date": "sept. 2021 - abr. 2022",
@@ -80,9 +80,9 @@
     },
     "supportfactory": {
       "date": "jul. 2020 - mar. 2022",
-      "title": "UI/UX Engineer | Frontend Engineer",
+      "title": "Software Engineer | UI/UX Engineer",
       "place": "SupportFactory.net",
-      "description": "En SupportFactory me dediqué a la gestión, diseño, mantenimiento y desarrollo de las interfaces de varios proyectos, mejorando su calidad a través de soluciones sencillas y escalables. También tuve el rol de crear la imagen de marca de algunos proyectos. Trabajé con Photoshop, Illustrator, Javascript, HTML, CSS y PHP."
+      "description": "En SupportFactory me dediqué a la gestión, diseño, mantenimiento y desarrollo de las aplicaciones de varios proyectos, mejorando su calidad a través de soluciones sencillas y escalables. También tuve el rol de crear la imagen de marca de algunos proyectos. Trabajé con React, Typescript, Figma, Photoshop, Illustrator, Javascript, HTML, CSS, PHP y MySQL."
     },
     "bawy": {
       "date": "ene. 2020 - nov. 2020",
