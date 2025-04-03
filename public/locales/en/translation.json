@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Denis Gudina's Portfolio - Software Engineer with 4 years of experience",
+    "title": "Denis Gudina's Portfolio - Software Engineer with 5 years of experience",
     "description": "Contact Denis Gudina to create your web application. Software Engineer.",
     "name": "Denis Gudina"
   },
@@ -13,9 +13,9 @@
     }
   },
   "hero": {
-    "badge_text": "Available for work",
+    "badge_text": "In a project currently",
     "header": "Hi, I'm Denis Gudina",
-    "experience": " - 4 years of experience.",
+    "experience": " - 5 years of experience.",
     "role": "Software Engineer",
     "location": "Madrid, Spain. ",
     "description": "Specialized in web application development and design systems for digital products."
@@ -31,7 +31,7 @@
     }
   },
   "about_me": {
-    "line1": "<p>My name is Denis. I started in programming as a Game Designer and Developer, but I soon discovered my passion for web applications. Since more than 4 years ago, <strong>I design and develop fluid, scalable and sustainable web applications.</strong></p>",
+    "line1": "<p>My name is Denis. I started in programming as a Game Designer and Developer, but I soon discovered my passion for web applications. Since more than 5 years ago, <strong>I design and develop fluid, scalable and sustainable web applications.</strong></p>",
     "line2": "<p>As a technology professional, I am delving into the intersection between design and development. I am attracted to <strong>applications with a well-structured design</strong>, as well as projects related to <strong>generative AI</strong>.</p>",
     "line3": "<p>Passionate about fitness, martial arts, music, playing the guitar, video games, philosophy, science fiction, fantasy, current affairs and hiking.</p>"
   },
@@ -66,6 +66,12 @@
     "netlify": "Netlify"
   },
   "experience": {
+    "innocv": {
+      "date": "oct. 2024 - act",
+      "title": "Software Engineer",
+      "place": "INNOCV",
+      "description": "At INNOCV I develop and maintain several applications, focused on an intensive use of data that require an understandable and orderly visualization. My main role is to provide interface solutions to clients, so they can work in a coherent and coordinated way across all applications. I worked with React, Zustand, Storybook, Ant Design, AgGrid, AgCharts, Azure DevOps."
+    },
     "mogu": {
       "date": "dec. 2022 - jun. 2024",
       "title": "Software Engineer",
