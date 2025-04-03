@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Portfolio de Denis Gudiña - Software Engineer con 4 años de experiencia",
+    "title": "Portfolio de Denis Gudiña - Software Engineer con 5 años de experiencia",
     "description": "Contacta a Denis Gudiña para crear tu aplicación web. Software Engineer.",
     "name": "Denis Gudiña"
   },
@@ -13,9 +13,9 @@
     }
   },
   "hero": {
-    "badge_text": "Disponible para trabajar",
+    "badge_text": "Actualmente en un proyecto",
     "header": "Hola, soy Denis Gudiña",
-    "experience": " - 4 años de experiencia.",
+    "experience": " - 5 años de experiencia.",
     "role": "Software Engineer",
     "location": "Madrid, España. ",
     "description": "Especializado en el desarrollo de aplicaciones y sistemas de diseño para productos digitales."
@@ -31,7 +31,7 @@
     }
   },
   "about_me": {
-    "line1": "<p>Me llamo Denis. Empecé en la programación como Diseñador y Desarrollador de Videojuegos, pero pronto descubrí mi pasión por las aplicaciones web. Desde hace algo más de 4 años, <strong>ideo y desarrollo aplicaciones web fluidas, escalables y sostenibles.</strong></p>",
+    "line1": "<p>Me llamo Denis. Empecé en la programación como Diseñador y Desarrollador de Videojuegos, pero pronto descubrí mi pasión por las aplicaciones web. Desde hace algo más de 5 años, <strong>ideo y desarrollo aplicaciones web fluidas, escalables y sostenibles.</strong></p>",
     "line2": "<p>Como profesional de la tecnología, estoy profundizando en la intersección entre el diseño y el desarrollo. Me atraen las <strong>aplicaciones con un diseño bien estructurado</strong>, así como los proyectos relacionados con la <strong>IA generativa</strong>.</p>",
     "line3": "<p>Apasionado del fitness, las artes marciales, la música, la guitarra, los videojuegos, la filosofía, la ciencia ficción, la fantasía, la actualidad y el senderismo.</p>"
   },
@@ -66,6 +66,12 @@
     "netlify": "Netlify"
   },
   "experience": {
+    "innocv": {
+      "date": "oct. 2024 - act",
+      "title": "Software Engineer",
+      "place": "INNOCV",
+      "description": "En INNOCV desarrollo y mantengo diversas aplicaciones, centradas en un uso intensivo de datos que requieren de una visualización comprensible y ordenada. Mi rol principal es dar soluciones de interfaz a los clientes, para que puedan trabajar de manera coherente y coordinada en todas las aplicaciones. Trabajé con React, Zustand, Storybook, Ant Design, AgGrid, AgCharts, Azure DevOps."
+    },
     "mogu": {
       "date": "dic. 2022 - jun. 2024",
       "title": "Software Engineer",
